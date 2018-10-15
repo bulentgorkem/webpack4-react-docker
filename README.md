@@ -1,2 +1,7 @@
 # webpack4-react-docker
-webpack4 react docker hot reloading
+
+Webpack4 react project with hot reloading in a docker container..
+
+# run
+
+`docker-compose up`

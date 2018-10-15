@@ -9,8 +9,6 @@ RUN yarn install && cp yarn.lock /tmp
 
 COPY . .
 
-RUN chmod +x docker-entrypoint.sh
-# ENTRYPOINT ["/app/docker-entrypoint.sh"]
 
 EXPOSE 8000
 
