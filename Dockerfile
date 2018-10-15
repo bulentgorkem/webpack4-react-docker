@@ -7,6 +7,8 @@ WORKDIR /app
 COPY ./package.json ./*yarn* ./
 RUN yarn install && cp yarn.lock /tmp
 
+ENV PATH ./node_modules/.bin:$PATH
+
 COPY . .
 
 
