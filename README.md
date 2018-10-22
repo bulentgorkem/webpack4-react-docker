@@ -4,7 +4,12 @@ Webpack4 react project with hot reloading in a docker container..
 
 # run
 
-`docker-compose up`
+For prod run together with http serve
+`docker-compose up prod`
+
+For dev run with webpack dev server
+`docker-compose up watch`
+
 
 # browse
 

@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import _ from 'lodash';
-
-var other = _.concat(2, [3], [[4]]);
 
 const Hello = props => (
   <div>
-    {' '}
-    Hello {props.name} <br /> {other}
+    Hello {props.name} <br />
   </div>
 );
 
-ReactDOM.render(<Hello name="John kjfgjkdfj" />, document.getElementById('root'));
+ReactDOM.render(<Hello name="John Doe" />, document.getElementById('root'));
