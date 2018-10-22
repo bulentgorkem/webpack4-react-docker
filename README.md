@@ -2,6 +2,12 @@
 
 Webpack4 react project with hot reloading in a docker container..
 
+Sample repo demonstrates webpack4 hot-reloading functionality when the code is served from docker container instance. 
+
+This allows developers to edit and debug code running in a live container on their machine. 
+
+This way developers can replicate a production like container environment, isolated from their local machine context.
+
 # run
 
 For prod run together with http serve
