@@ -1,6 +1,6 @@
 FROM node:9.7-alpine
 RUN apk add --update bash && rm -rf /var/cache/apk/*
-RUN npm install -g yarn
+RUN npm install -g yarn serve
 
 WORKDIR /app
 
@@ -12,6 +12,10 @@ ENV PATH ./node_modules/.bin:$PATH
 COPY . .
 
 
+#production port
+EXPOSE 5000
+
+#development port
 EXPOSE 8000
 
-CMD ["yarn", "run", "build"]
+CMD ["yarn", "run", "serve"]

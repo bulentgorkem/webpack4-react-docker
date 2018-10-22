@@ -1,10 +1,15 @@
 version: "3.6"
 
 services:
-  webpack:
+  watch:
     build: "."
     command: yarn run watch
     ports:
       - "8000:8000"
     volumes:
       - ".:/app"
+  prod:
+    build: "."
+    command: yarn run serve 
+    ports:
+      - "8000:5000"

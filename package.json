@@ -12,7 +12,8 @@
     "webpack-merge": "^4.1.4"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack -p",
+    "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
+    "serve": "npm run build && serve  -s dist",
     "watch": "NODE_ENV=development webpack-dev-server --mode development "
   },
   "dependencies": {
