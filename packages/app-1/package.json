@@ -21,9 +21,6 @@
     "serve": "npm run build && serve  -s dist",
     "watch": "NODE_ENV=development webpack-dev-server --mode development "
   },
-  "bin": {
-    "app1": "serve -s dist"
-  },
   "dependencies": {
     "serve": "^10.0.2"
   },
