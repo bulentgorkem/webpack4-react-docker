@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import foo from 'library-1';
+import foo from 'library-1/foo';
 
 const Hello = props => (
   <div>

@@ -2,10 +2,10 @@
   "repository": {},
   "name": "webpack4-react-docker",
   "devDependencies": {
-    "lerna": "^3.4.3",
     "babel-core": "~6.26",
     "babel-loader": "~7.1",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "lerna": "^3.4.3"
   }
 }

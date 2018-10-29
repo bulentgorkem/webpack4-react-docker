@@ -1,10 +1,16 @@
 {
-  "name": "library-1",
+  "name": "bulent-gorkem-library-1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "foo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "~6.26",
+    "babel-loader": "~7.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
   },
   "author": "",
   "license": "ISC"
