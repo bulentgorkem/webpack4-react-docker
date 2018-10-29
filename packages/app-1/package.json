@@ -11,17 +11,23 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
-    "webpack-merge": "^4.1.4"
-  },
-  "scripts": {
-    "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
-    "serve": "npm run build && serve  -s dist",
-    "watch": "NODE_ENV=development webpack-dev-server --mode development "
-  },
-  "dependencies": {
+    "webpack-merge": "^4.1.4",
     "bulent-gorkem-library-1": "^1.0.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
+    "serve": "serve  -s dist",
+    "watch": "NODE_ENV=development webpack-dev-server --mode development "
+  },
+
+  "bin": {
+    "app1":"npm run serve" 
+  },
+
+  "dependencies": {
+    "serve": "^10.0.2"
   },
   "name": "bulent-gorkem-app1",
   "gitHead": "151605bd10570f117fb98e72e712c919ec7baf32"
