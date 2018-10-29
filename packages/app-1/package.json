@@ -23,5 +23,6 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
-  "name": "bulent-gorkem-app1"
+  "name": "bulent-gorkem-app1",
+  "gitHead": "778dc461f4a9731234e79165d1b02313612aeb2a"
 }

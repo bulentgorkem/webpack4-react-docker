@@ -13,5 +13,6 @@
     "babel-preset-react": "^6.24.1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "778dc461f4a9731234e79165d1b02313612aeb2a"
 }
