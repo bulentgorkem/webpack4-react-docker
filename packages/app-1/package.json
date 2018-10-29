@@ -18,11 +18,11 @@
   },
   "scripts": {
     "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
-    "serve": "serve  -s dist",
+    "serve": "npm run build && serve  -s dist",
     "watch": "NODE_ENV=development webpack-dev-server --mode development "
   },
   "bin": {
-    "app1": "npm run serve"
+    "app1": "serve -s dist"
   },
   "dependencies": {
     "serve": "^10.0.2"
