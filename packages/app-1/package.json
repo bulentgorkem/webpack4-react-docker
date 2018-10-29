@@ -1,6 +1,6 @@
 {
   "repository": {},
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "autoprefixer": "~8.5",
     "babel-core": "~6.26",
@@ -19,7 +19,7 @@
     "watch": "NODE_ENV=development webpack-dev-server --mode development "
   },
   "dependencies": {
-    "bulent-gorkem-library-1": "^1.0.0",
+    "bulent-gorkem-library-1": "^1.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
