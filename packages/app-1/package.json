@@ -1,31 +1,29 @@
 {
   "repository": {},
-  "version": "1.0.3",
+  "version": "1.0.4",
   "devDependencies": {
     "autoprefixer": "~8.5",
     "babel-core": "~6.26",
     "babel-loader": "~7.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "bulent-gorkem-library-1": "^1.0.3",
     "extract-text-webpack-plugin": "~3.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
-    "webpack-merge": "^4.1.4",
-    "bulent-gorkem-library-1": "^1.0.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "webpack-merge": "^4.1.4"
   },
   "scripts": {
     "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
     "serve": "serve  -s dist",
     "watch": "NODE_ENV=development webpack-dev-server --mode development "
   },
-
   "bin": {
-    "app1":"npm run serve" 
+    "app1": "npm run serve"
   },
-
   "dependencies": {
     "serve": "^10.0.2"
   },
