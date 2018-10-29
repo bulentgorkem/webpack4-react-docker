@@ -1,24 +1,11 @@
 {
   "repository": {},
+  "name": "webpack4-react-docker",
   "devDependencies": {
-    "autoprefixer": "~8.5",
+    "lerna": "^3.4.3",
     "babel-core": "~6.26",
     "babel-loader": "~7.1",
     "babel-preset-env": "^1.7.0",
-    "extract-text-webpack-plugin": "~3.0",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9",
-    "webpack-merge": "^4.1.4"
-  },
-  "scripts": {
-    "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
-    "serve": "npm run build && serve  -s dist",
-    "watch": "NODE_ENV=development webpack-dev-server --mode development "
-  },
-  "dependencies": {
-    "babel-preset-react": "^6.24.1",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "babel-preset-react": "^6.24.1"
   }
 }

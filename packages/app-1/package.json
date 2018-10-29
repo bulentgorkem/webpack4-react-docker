@@ -1,0 +1,23 @@
+{
+  "repository": {},
+  "version": "1.0.1",
+  "devDependencies": {
+    "autoprefixer": "~8.5",
+    "extract-text-webpack-plugin": "~3.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9",
+    "webpack-merge": "^4.1.4"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
+    "serve": "npm run build && serve  -s dist",
+    "watch": "NODE_ENV=development webpack-dev-server --mode development "
+  },
+  "dependencies": {
+    "library-1": "^1.0.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "name": "webpack4-react-docker"
+}
