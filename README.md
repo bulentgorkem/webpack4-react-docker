@@ -26,3 +26,20 @@ http://localhost:8000
 # modify
 
 change app.js file or index.html file, locally you should see changes refreshed on the browser page immediately.
+
+# test on kubernetes cluster
+
+create a gcp kubernetes container cluster with a free trial account
+
+add the local docker image to container registry
+
+configure docker to use gcloud command line tool to use credential helper
+
+`gcloud auth configure-docker`
+
+docker tag image to google registry url
+
+`docker tag webpack4-react-docker eu.gcr.io/[PROJECT-ID]/webpack4-react:latest`
+
+`docker push eu.gcr.io/[PROJECT-ID]/webpack4-react:latest`
+

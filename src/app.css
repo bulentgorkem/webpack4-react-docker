@@ -1,0 +1,10 @@
+body {
+    background-color: lightgray;
+}
+
+.logo {
+    background-image: url('react.png');
+    width:140px;
+    height: 140px;
+    background-repeat: no-repeat;
+}
