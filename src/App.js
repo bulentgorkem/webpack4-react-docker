@@ -7,7 +7,7 @@ const Hello = props => (
   <div>
     Hello
     <br />
-    <Identity name="bulent" lastName="gorkem" />
+    <Identity name="bulent" lastName="gorkem2" />
     <div class="logo" />
   </div>
 );

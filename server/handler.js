@@ -14,6 +14,15 @@ module.exports = async (request, response) => {
         ]
       },
       {
+        source: '*.js',
+        headers: [
+          {
+            key: 'Content-Encoding',
+            value: 'gzip'
+          }
+        ]
+      },
+      {
         source: '404.html',
         headers: [
           {
