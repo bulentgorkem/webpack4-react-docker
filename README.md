@@ -43,3 +43,12 @@ docker tag image to google registry url
 
 `docker push eu.gcr.io/[PROJECT-ID]/webpack4-react:latest`
 
+deploy this container as a workload in the newly created cluster
+
+expose the workload as a service with port 8000 mapped as a nodeport service
+`kubectl create -f ./deploy/service.yaml`
+
+expose the service as ingress HTTP load balancer
+`kubectl create -f ./deploy/ingress.yaml`
+
+once the ingress services is setup with public ip, you can run load, cdn, cache tests..
