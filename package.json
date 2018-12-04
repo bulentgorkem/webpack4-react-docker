@@ -1,24 +1,36 @@
 {
   "repository": {},
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "autoprefixer": "~8.5",
     "babel-core": "~6.26",
     "babel-loader": "~7.1",
     "babel-preset-env": "^1.7.0",
-    "extract-text-webpack-plugin": "~3.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9",
     "webpack-merge": "^4.1.4"
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack -p && cp ./index.html ./dist",
-    "serve": "npm run build && serve  -s dist",
-    "watch": "NODE_ENV=development webpack-dev-server --mode development "
+    "build": "NODE_ENV=production webpack -p",
+    "serve": "npm run build && node server/index.js",
+    "watch": "NODE_ENV=development webpack-dev-server --mode development --open "
   },
   "dependencies": {
     "babel-preset-react": "^6.24.1",
+    "compression": "^1.7.3",
+    "css-loader": "^1.0.1",
+    "express": "^4.16.4",
+    "html-webpack-plugin": "^3.2.0",
+    "image-loader": "^0.0.1",
+    "img-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.4.4",
+    "null-loader": "^0.1.1",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "serve-handler": "^5.0.5",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "yargs": "^12.0.2"
   }
 }

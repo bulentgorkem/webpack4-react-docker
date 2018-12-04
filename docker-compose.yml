@@ -7,9 +7,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ".:/app"
+      - ".:/src"
   prod:
     build: "."
     command: yarn run serve 
     ports:
-      - "8000:5000"
+      - "8000:8000"

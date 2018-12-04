@@ -11,11 +11,6 @@ ENV PATH ./node_modules/.bin:$PATH
 
 COPY . .
 
-
-#production port
-EXPOSE 5000
-
-#development port
 EXPOSE 8000
 
 CMD ["yarn", "run", "serve"]
